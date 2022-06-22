@@ -1,12 +1,15 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div class="container">
+    <router-view />
+  </div>
+  <a-layout-footer class="footer">
+    Trivia Questions Powered By:
+    <strong
+      ><a href="https://the-trivia-api.com/" target="_blank"
+        >The Trivia API</a
+      ></strong
+    >
+  </a-layout-footer>
 </template>
 
 <style>
@@ -16,6 +19,26 @@ import HelloWorld from './components/HelloWorld.vue'
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  min-height: 100vh;
+  background: #e0eaf2;
+}
+</style>
+
+<style scoped>
+.footer {
+  text-align: center;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  padding: 4px;
+}
+
+.container {
+  padding-top: 60px;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
 }
 </style>
