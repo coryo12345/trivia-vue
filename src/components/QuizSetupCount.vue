@@ -6,7 +6,8 @@ const questionCountStore = useQuestionCountStore();
 
 <template>
   <div class="flex">
-    <span style="margin-right: 1rem">Number of Questions</span>
+    <span class="mr-2">Number of Questions</span>
+    <span class="mr-2">({{ questionCountStore.count }})</span>
     <a-slider
       v-model:value="questionCountStore.count"
       :min="1"
@@ -17,7 +18,7 @@ const questionCountStore = useQuestionCountStore();
 
 <style scoped>
 .ant-slider {
-  width: 20rem;
+  width: 15rem;
 }
 
 .flex {

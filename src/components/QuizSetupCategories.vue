@@ -15,7 +15,7 @@ onMounted(() => {
 
 <template>
   <div class="flex">
-    <span style="margin-right: 1rem">Category</span>
+    <span class="mr-2">Category</span>
     <a-select
       placeholder="Select a Category"
       v-model:value="categoriesStore.selectedCategory"

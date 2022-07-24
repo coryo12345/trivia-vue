@@ -51,7 +51,7 @@ onMounted(() => {
     </div>
     <br />
   </template>
-  <a-button type="primary" @click="tryAgain" style="margin-bottom: 64px">
+  <a-button type="primary" @click="tryAgain" class="mb-12">
     Try Again
   </a-button>
 </template>

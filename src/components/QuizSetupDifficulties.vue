@@ -6,7 +6,7 @@ const difficultyStore = useDifficultiesStore();
 
 <template>
   <div class="flex">
-    <span style="margin-right: 1rem">Difficulty</span>
+    <span class="mr-2">Difficulty</span>
     <a-select
       v-model:value="difficultyStore.selectedDifficulty"
       placeholder="Select a Difficulty"
